@@ -1,0 +1,3 @@
+resource_group_name        = "smtp-vpn-rg"
+location                   = "East US"
+vpn_client_address_pool    = ["10.1.0.0/24"]
