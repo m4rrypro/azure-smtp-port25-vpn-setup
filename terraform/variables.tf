@@ -1,9 +1,26 @@
-variable "resource_group_name" {
-  description = "The name of the resource group"
-  default     = "smtp-vpn-rg"
+variable "digitalocean_token" {
+  description = "DigitalOcean API Token"
+  type        = string
 }
 
-variable "location" {
-  description = "The Azure region"
-  default     = "East US"
+variable "tailscale_auth_key" {
+  description = "Tailscale Auth Key"
+  type        = string
+}
+
+variable "server_name" {
+  description = "Name of the SMTP server"
+  type        = string
+  default     = "smtp-server"
+}
+
+variable "region" {
+  description = "Region for the server"
+  type        = string
+  default     = "nyc3"
+}
+
+variable "ssh_key_id" {
+  description = "SSH Key ID for accessing the server"
+  type        = string
 }
